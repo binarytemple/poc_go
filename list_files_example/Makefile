@@ -5,11 +5,11 @@ all: list_leases read_leases
 clean:
 	rm -f list_leases
 
-run_list:
+run_list : 
 	go run list_leases.go
 
-run_read:
-	go run list_leases.go
+run_read : 
+	go run read_leases.go
 
 list_leases:
 	go build list_leases.go
